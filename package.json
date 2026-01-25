@@ -1,0 +1,26 @@
+{
+  "name": "paja",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeeeeRP/PAJA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MeeeeRP/PAJA/issues"
+  },
+  "homepage": "https://github.com/MeeeeRP/PAJA#readme",
+  "devDependencies": {
+    "htmlhint": "^1.8.0",
+    "prettier": "^3.7.4",
+    "stylelint": "^16.26.1"
+  }
+}
