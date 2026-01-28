@@ -14,62 +14,7 @@
                 flex-direction: column;
                 align-items: center;         
                 /* background-color: #EAF1FB; */
-                background-color: rgba(0,0,0,0);
-            }
-
-            #about {
-                display: grid;
-                align-items: flex-start;
-                flex-direction: column;
-                margin-bottom: 1rem;
-                justify-content: center;
-                padding: 2rem;
-                gap: 8rem;
-                width:80%;
-            }
-            #balls-background {
-                position: absolute;
-                width: 90%;
-                justify-self: center;
-                z-index: -1;
-                top: 750px
-            }
-            #mission {
-                margin-top: 3rem;
-                display: flex;
-                flex-direction: column;
-                width: 60%;
-                justify-self: flex-end;
-                height: min-content;
-                z-index: 1;
-            }
-            #mission p, #vision p {
-                font-size:2rem;
-            }
-            #vision {
-                margin-bottom:4rem;
-                z-index:1;
-                padding-top:2rem;
-                display: flex;
-                flex-direction: column;
-                width: 60%;
-                justify-self:flex-start;
-                height: min-content;
-            }
-            #vision a {
-                font-size: 1.3rem;
-                margin-top: .7rem;
-            }
-            #banner {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 1rem;
-            }
-            #banner img {
-                width: 100%;
-                object-fit: contain;
+                background-color: #eaf1fb;
             }
         </style>
     </head>
@@ -79,7 +24,7 @@
             <h1 class="title">Philadelphia Area Jugglers Association</h1>
         <nav>
             <ul>
-                <li><a href="festival.html">Philly Fest</a></li>
+                <li><a href="festival.html">PhillyFest</a></li>
                 <li><a href="calendar.html">Calendar</a></li>
                 <li><a href="team.html">About Us</a></li>
                 <!-- <li><a href="history.html">History</a></li> -->
@@ -87,7 +32,7 @@
         </nav>
         </header>
         <div id="banner">
-            <img src="assets/images/index/PhillyFest 2025 4.jpg" alt="Philly Fest 2025 Toss Up">
+            <img src="assets/images/index/PhillyFest 2025 4.jpg" alt="PhillyFest 2025 Toss Up">
         </div>
         <div id="content">
             <div id="about">
@@ -105,7 +50,7 @@
         <footer>
             <div id="footer-top">
                 <h4>Newsletter</h4>
-                <button>Signup</button>
+                <input type="text" id="sign-up" name="email" placeholder="juggler@gmail.com"></input>
                 <h4>Calendar</h4>
                 <button>Download</button>
             </div>

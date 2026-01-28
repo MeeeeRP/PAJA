@@ -1,76 +1,206 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Calendar — PAJA</title>
-		<meta name="description" content="PAJA events calendar">
-		<link rel="stylesheet" href="assets/css/stylesheet.css">
-	</head>
-	<body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calendar — PAJA</title>
+    <meta name="description" content="PAJA events calendar">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <style>
+        /* Local Organizations Styles */
+        #local {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            background-color: #E5D6BD;
+            color: #13110C;
+            text-align: center;
+            padding: 2rem 0;
+            gap: 4rem;
+        }
+
+        .local-org {
+            width: 80%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            gap: 2rem;
+        }
+
+        .local-org a {
+            width: 40%;
+        }
+        .local-org h4 {
+            font-weight: normal;
+        }
+
+        .logo {
+            width: 50%;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+
+        .info {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem;
+            border: solid 2px #000000;
+            border-radius: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
     <body>
         <header>
             <a href="index.html"><img id="paja-logo" src="Assets/logos/Logo 1/PAJA-Logo1-Color.png" alt="PAJA Logo"></a>
             <h1 class="title">Philadelphia Area Jugglers Association</h1>
-        <nav>
-            <ul>
-                <li><a href="festival.html">Philly Fest</a></li>
-                <li><a href="calendar.html">Calendar</a></li>
-                <li><a href="team.html">About Us</a></li>
-                <!-- <li><a href="history.html">History</a></li> -->
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="festival.html">PhillyFest</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="team.html">About Us</a></li>
+                    <!-- <li><a href="history.html">History</a></li> -->
+                </ul>
+            </nav>
         </header>
-		<main id="content">
-			<h2>Events Calendar</h2>
-			<!-- Calendar content goes here -->
-			<iframe id="calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=NTliMzdpYmNzbXZwOXA1ZWJib3RwY2EwdXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23b39ddb" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-			<h4>Do you have a Juggling Club, Festival, or Performance to share? Let us know here <a href="mailto:contact@paja.org">contact@paja.org</a></h4>
+        <main id="content">
+            <h2>Events Calendar</h2>
+            <!-- Calendar content goes here -->
+            <iframe id="calendar"
+                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=NTliMzdpYmNzbXZwOXA1ZWJib3RwY2EwdXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23b39ddb"
+                style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            <h4>Do you have a Juggling Club, Festival, or Performance to share? Let us know here <a
+                    href="mailto:contact@paja.org">contact@paja.org</a></h4>
             <div id="local">
                 <h2 class="title">Philadelphia Area Juggling Clubs</h2>
                 <div class="local-org">
-                    <a href="org1.com"><img src="assets/svgs/Hoop 3.svg" alt="Org 1 Logo">
-            <div class="workshop">
-            <h4>Workshop 1</h4>
-            <h5>Instructor 1 | ti:me - ti:me PM</h5>
-            <p>Description of workshop 1</p>
-          </div>
+                    <a href="https://www.facebook.com/profile.php?id=61557358186937"><img class="logo"
+                            src="https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/434394697_10159565743745095_671411268143679040_n.jpg?stp=c0.0.1719.1719a_dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=9BuIrEVKox0Q7kNvwHiDYXn&_nc_oc=AdkHbhD9aMoACMnAfokVoJDrk6Ov1jyj-Lbiwr8evtrX6-li5cnK_YoyRUfFihOLKck&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=CaX1bdu_RdtprzBRCIfpBw&oh=00_AfpwD2N3ZZ5RNZcOrKCNDQ818uDWyqYJs8Z5v9ho1Ff1hA&oe=69805A62"
+                            alt="Fishtown Club Logo"></a>
+                    <div class="info">
+                        <h3>Fishtown Juggling and Flow Club</h3>
+                        <h4 ><b>When:</b> 2nd Tuesdays | 6:30 PM - 8:30 PM</h4>
+                        <h4 ><b>Where:</b> Bedrock Fishtown, 2443 E Gordon Street,
+                            Philadelphia, PA 19125</h4>
+                        <h4 ><b>Contact:</b> Noel Yee <a
+                                href="mailto:contact@paja.org">noel@yee.org</a></h4>
+                    </div>
                 </div>
                 <div class="local-org">
-                    <a href="org2.com"><img src="assets/svgs/Ring 2.svg" alt="Org 2 Logo">
-                    <h3 class="description">Org 2</h3></a>
+                    <a href="https://www.facebook.com/groups/PhiladelphiaJugglersClub/"><img class="logo"
+                            src="https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/546496411_24546553511650892_7126189514511583936_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2285d6&_nc_ohc=q5wpsgTClvIQ7kNvwHU-KcQ&_nc_oc=AdnwESLsn51xGz0jc1hl1FMHTRN56uk2MnTuwvYF-EYLPq2Jcg59E037dqceWxz9EMs&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=2pC-iPhk6XywgyQUxpCJDw&oh=00_AfpjUmZ2p_ZEsG2ZuV878eeVfzDVix4yTaDMRqlN8aCR8w&oe=69804DAC"
+                            alt="Philadelphia Jugglers Club Logo"></a>
+                    <div class="info">
+                        <h3>Philadelphia Jugglers Club</h3>
+                        <h4 ><b>When:</b> Mondays | 7:00 PM - 10:00 PM</h4>
+                        <h4 ><b>Where:</b> Grace Reformed Episcopal Church, 523 Clifton Ave, Collingdale, PA 19023</h4>
+                        <h4 ><b>Contact:</b> Larry Vee <a
+                                href="mailto:contact@paja.org">larry@vee.org</a></h4>
+                    </div>
                 </div>
                 <div class="local-org">
-                    <a href="org3.com"><img src="assets/svgs/Hoop 3.svg" alt="Org 3 Logo">
-                    <h3 class="description">Org 3</h3></a>
-                </div>
-                            <div class="local-org">
-                    <a href="org4.com"><img src="assets/svgs/Ring 2.svg" alt="Org 4 Logo">
-                    <h3 class="description">Org 4</h3></a>
+                    <a href="https://www.facebook.com/groups/197392083730053/"><img class="logo"
+                            src="https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/466730133_10236466462667332_2229854927725449222_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2285d6&_nc_ohc=VjPM0zjHAp0Q7kNvwFXAmll&_nc_oc=Adl0QPxlEIYYpMPl-NZVS_aixD7TLt3gRYyZFExqb-o7Mm9ued46cTuvMWwWJv0X3Hk&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=nEQEBqF1hVIDjtN-NqUSAA&oh=00_AfrH61o3xf7M4x_qBxbgea_crLuSzzYPucYVQNM-jLTTqw&oe=698053E8"
+                            alt="Reading Juggling Club Logo"></a>
+                    <div class="info">
+                        <h3>Reading Juggling Club</h3>
+                        <h4 ><b>When:</b> Tuesdays |?</h4>
+                        <h4 ><b>Where:</b> ?</h4>
+                        <h4 ><b>Contact:</b> ? <a
+                                href="mailto:contact@paja.org">notlarry@vee.org</a></h4>
+                    </div>
                 </div>
                 <div class="local-org">
-                    <a href="org5.com"><img src="assets/svgs/Hoop 3.svg" alt="Org 5 Logo">
-                    <h3 class="description">Org 5</h3></a>
+                    <a href="https://www.facebook.com/groups/1156799764530569"><img class="logo"
+                            src="https://circuscampusphiladelphia.com/wp-content/uploads/2021/10/CircusCampusLogo-1024x722.png"
+                            alt="Circus Campus Juggling Club Logo"></a>
+                    <div class="info">
+                        <h3>Circus Campus Juggling Club</h3>
+                        <h4 ><b>When:</b> Wednesdays | 7:00 PM - 9:00 PM</h4>
+                        <h4 ><b>Where:</b> Circus Campus, 6452 Greene St, Philadelphia, PA 19119</h4>
+                        <h4 ><b>Contact:</b> Greg Kennedy <a
+                                href="mailto:contact@paja.org">inovative@juggler.org</a></h4>
+                    </div>
+                </div>
+                <div class="local-org">
+                    <a href="https://www.facebook.com/groups/3785686658361566"><img class="logo"
+                            src="https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/436315812_10160163693243511_8374262176186011537_n.jpg?stp=cp6_dst-jpg_s640x640_tt6&_nc_cat=104&ccb=1-7&_nc_sid=2285d6&_nc_ohc=YLHEgCvBOo8Q7kNvwHMUTIU&_nc_oc=AdnufxDY4h5yKt_kk4tFIfvi9aPe30wng6bSF_t0rPtt454Cax58mEf3pSnZN63Y_P8&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=xdSrMiCf7PpOEVllvobxyQ&oh=00_Afqr-_UKm1VudnlrWKRZnN95RgiZ3f4-TlA21C8IT4ahMA&oe=69805B9F"
+                            alt="The Easton Sideshow Club Logo"></a>
+                    <div class="info">
+                        <h3>The Easton Sideshow</h3>
+                        <h4 ><b>When:</b> Wednesdays 6:15 PM | Saturdays 11:30 PM</h4>
+                        <h4 ><b>Where:</b> Scott Park, 130 Larry Holmes Dr, Easton, PA 18042</h4>
+                        <h4 ><b>Contact:</b> Katrina Albrecht <a
+                                href="mailto:contact@paja.org">katrina@albrecht.org</a></h4>
+                    </div>
+                </div>
+                <div class="local-org">
+                    <a href="https://www.facebook.com/groups/10150099238485531"><img class="logo"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv1Hh5BgZvg67ABeznUs3HnvAUdE0LS1J7Cg&s"
+                            alt="Turks Head Jugglers Logo"></a>
+                    <div class="info">
+                        <h3>Turks Head Jugglers</h3>
+                        <h4 ><b>When:</b> Thursdays | 6:00 PM - 9:00 PM</h4>
+                        <h4 ><b>Where:</b> ? </h4>
+                        <h4 ><b>Contact:</b> Richard Cairncross <a
+                                href="mailto:contact@paja.org">richard@cairncross.org</a></h4>
+                    </div>
+                </div>
+                <div class="local-org">
+                    <a href="https://www.facebook.com/groups/1313213295369406/"><img class="logo"
+                            src="https://i.ytimg.com/vi/UkKcUorjUgc/maxresdefault.jpg"
+                            alt="Lancaster Juggling Club Logo"></a>
+                    <div class="info">
+                        <h3>Lancaster Juggling Club</h3>
+                        <h4 ><b>When:</b> Thursdays | 6:00 PM - 9:00 PM</h4>
+                        <h4 ><b>Where:</b> Zion Lutheran Church, 18 Quarry Rd, Leola, PA 17540</h4>
+                        <h4 ><b>Contact:</b> Tait Harbaugh <a
+                                href="mailto:contact@paja.org">tait@harbaugh.org</a></h4>
+                    </div>
+                </div>
+                <div class="local-org">
+                    <a href="https://www.facebook.com/groups/1387895762241702/"><img class="logo"
+                            src="https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/504372158_10231796844037871_7710100127595896810_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=109&ccb=1-7&_nc_sid=2285d6&_nc_ohc=qHP8bcLYbY0Q7kNvwEPjRUw&_nc_oc=AdkACO1xUjxYlxsQ9OdOhHRN-c8wCJSEJ7e7RoFZ8g404DA_3-6mChfqCyEYkxX_LUo&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=j2cSc9R58MUv61Uy8cYbnA&oh=00_AfrLe-GZKxgzDJilcDwN3ICc0puKPBgkONjBFfbsomDozQ&oe=69806AA8"
+                            alt="NEPA Jugglers Logo"></a>
+                    <div class="info">
+                        <h3>Lancaster Juggling Club</h3>
+                        <h4 ><b>When:</b> Yes | ?</h4>
+                        <h4 ><b>Where:</b> ?</h4>
+                        <h4 ><b>Contact:</b> Damian Aquilina <a
+                                href="mailto:contact@paja.org">damian@aquilina.org</a></h4>
+                    </div>
                 </div>
             </div>
-        </div>
+            </div>
 
-		</main>
+        </main>
         <footer>
             <div id="footer-top">
                 <h4>Newsletter</h4>
-                <button>Signup</button>
+                <input type="text" id="sign-up" name="email" placeholder="juggler@gmail.com"></input>
                 <h4>Calendar</h4>
                 <button>Download</button>
             </div>
             <div id="footer-bottom">
-            <ul>
-                <li><a href="#">Any helpful links we want in here and below</a></li>
-                <li><a href="#">Philly Fest</a></li>
-                <li><a href="#">Local Orgs</a></li>
-            </ul>
+                <ul>
+                    <li><a href="#">Any helpful links we want in here and below</a></li>
+                    <li><a href="#">Philly Fest</a></li>
+                    <li><a href="#">Local Orgs</a></li>
+                </ul>
             </div>
             <p>&copy; 2025 Philadelphia Area Jugglers Association. All rights reserved.</p>
         </footer>
-	</body>
+    </body>
+
 </html>

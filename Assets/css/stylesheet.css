@@ -45,23 +45,24 @@ a {
     text-decoration: none;
 }
 h1 {
-    font-size: 3em;
+    font-size: 3rem;
 }
 h2 {
-    font-size: 3.5em;
+    font-size: 3.5rem;
 }
 h3 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 h4 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 h5 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 h6, p {
-    font-size: 1em;
+    font-size: 1rem;
 }
+
 
 /* body, div, p, a, h1, h2, h3, h4, h5, h6, img, nav, header {
     border: solid 1px green;
@@ -89,9 +90,9 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 300px;
+    width: 20rem;
     /* margin: 5%; */
-    padding: 10px;
+    padding: .5rem;
     /* object-fit: contain; */
     /* max-height: min-content; */
 
@@ -107,8 +108,8 @@ header h1 {
 
 }
 nav {
-    margin-left: auto;
-    width: 90%;
+    margin-left: 1rem;
+    width: 100%;
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -152,6 +153,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     background-color: #eaf1fb;
+    
 }
 
 /* Footer styles */
@@ -163,6 +165,7 @@ footer {
     padding: 0;
     width: 100%;
     bottom: 0;
+    z-index:1;
 
 }
 #footer-top {
@@ -170,33 +173,110 @@ footer {
     display:flex;
     flex-direction: row;
     justify-content: center;
+    padding: .5rem;
+    gap: 1rem;
 }
 #footer-bottom {
     background-color: #5087B7;
 }
 
-/* Local Organizations Styles */
-#local {
-    width: 100%;
+/* Vision Styles */
+
+#about {
+    display: grid;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    justify-content: center;
+    padding: 2rem;
+    gap: 8rem;
+    width:80%;
+}
+#balls-background {
+    position: absolute;
+    width: 90%;
+    justify-self: center;
+    /* z-index: 1; */
+    top: 750px
+}
+#mission {
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    width: 60%;
+    justify-self: flex-end;
+    height: min-content;
+    z-index: 1;
+}
+#mission p, #vision p {
+    font-size:2rem;
+}
+#vision {
+    margin-bottom:4rem;
+    z-index:1;
+    padding-top:2rem;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-self:flex-start;
+    height: min-content;
+}
+#vision a {
+    font-size: 1.3rem;
+    margin-top: .7rem;
+}
+#banner {
+    width: 100%;
+    display: flex;
     justify-content: center;
-    background-color: #E5D6BD;
-    color: #13110C;
-    text-align: center;
-    padding: 1rem 0;
+    align-items: center;
+    padding: 1rem;
+}
+#banner img {
+    width: 100%;
+    object-fit: contain;
 }
 
-.local-org {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+
+
+@media screen and (max-width: 1400px) {
+  h1 {
+    font-size: 3vw;
 }
-.local-org img {
-    width: 40%;
-    height: auto;
-    object-fit: cover;
+h2 {
+    font-size: 3.5vw;
+}
+h3 {
+    font-size: 2vw;
+}
+h4 {
+    font-size: 1.5vw;
+}
+h5 {
+    font-size: 1.2vw;
+}
+h6, p {
+    font-size: 1vw;
+}
+
+#paja-logo {
+    width: 20vw
+}
+
+nav ul li a {
+    font-size:3vw;
+}  
+
+#mission p, #vision p {
+    font-size:2vw;
+}
+
+#fest-promo h2 {
+    font-size: 5vw;
+}
+#fest-promo h4 {
+    font-size: 1.9vw;
+    width: 37%;
+}
+
 }

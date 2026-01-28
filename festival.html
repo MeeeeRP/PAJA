@@ -1,263 +1,360 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Philadelphia Area Jugglers Association</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/stylesheet.css" />
-    <style>
-      #clubs-background {
-                position: absolute;
-                width: 100%;
-                justify-self: center;
-                z-index: -1;
-                top: 0
-            }
-        #page-top {
-            position: relative;
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            grid-template-rows:1fr 3fr;
-            width: 100%;
-            height: auto;
-            margin: 0;
-            top: 0;
-            z-index:1;
-        }
-        #intro {
-            display: flex;
-            flex-direction: column;
-            align-content: space-around;
-            border:none;
-            margin: 0;
-            position: relative;
-            grid-column: 2/2;
-            grid-row: 2/3;
-            padding: 5%;
-            text-align: center;
-            gap: 1rem;
-        }
-        #intro h1 {
-            font-size: 5em;
-            margin: 0;
-        }
 
-        #intro p {
-            font-size: 1.5em;
-            line-height: 1.4em;
-            text-align: center;
-        }
-        #fest-promo {
-            background-image: url("Assets/images/festival/PhillyFest 2025 3.jpg");
-            width: 100%;
-            min-height: 1000px;
-            /* background-color: #DDBD78; */
-            padding: 2rem 0;
-            color: white;
-            text-align: left;
-            z-index: 2;
-        }
-        #fest-promo h2 {
-            margin:0;
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Philadelphia Area Jugglers Association</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/stylesheet.css" />
+  <style>
+    #clubs-background {
+      position: absolute;
+      width: 100%;
+      justify-self: center;
+      z-index: -1;
+      top: 0
+    }
 
-            margin-left: 5%;
-            text-align: left;
-            font-size: 5em;
-            width: 90%;
-        }
-        #fest-promo h4 {
-          margin:0;
-            margin-left: 5%;
-            text-align: left;
-            font-size: 1.9em;
-            width: 37%;
-        }
-        #show {
-            background-color: #E5D6BD;
-            /* background-color: #59a2e5; */
-            width: 100%;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        #performers {
-            padding: 2rem;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 3rem;
-        }
-        .performer {
-            width: 20%;
-        }
-        .performer img {
-            width: 100%;
-            height: auto;
-            margin: 0;
-            margin-bottom:.5rem;
-        }
-        .performer p {
-            font-size: 1.3em;
-        }
-        #tickets {
-            background-color: #B1975F;
-            width: 100%;
-            padding: 2rem 0;
-            text-align: center;
-            z-index: 2;
-        }
-        #tickets h3 {
-            padding: 1rem;
-        }
-        #schedule {
-          background-color: #E5D6BD;
-          width: 100%;
-          padding-top: 2rem;
-        }
-        #schedule-title {
-          text-align: center;
-        }
-        #schedule-grid {
-          width: 100%;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-around;
-          padding: 2rem 10%;
-        }
-        .day {
-          display:flex;
-          flex-direction: column;
-          gap: 1rem;
-        }
-        .day h2 {
-          font-size: 2.9em;
-        }
-        .workshop {
-           background-color: white;
-          padding: 1rem;
-          border-radius: 10px;
-        }
-        .event {
-          background-color: #B1975F;
-          padding: 1rem;
-          border-radius: 10px;
-        }
-        #volunteer {
-          background-color: #B1975F;
-          width: 100%;
-          padding: 2rem 0;
-          text-align: center;
-        }
+    #page-top {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: 1fr 3fr;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      top: 0;
+      z-index: 1;
+      background-color: #eaf1fb;
 
-    </style>
-  </head>
-  <body>
-    <header>
-      <a href="index.html"
-        ><img
-          id="paja-logo"
-          src="Assets/logos/Logo 1/PAJA-Logo1-Color.png"
-          alt="PAJA Logo"
-      /></a>
-      <h1 class="title">Philadelphia Area Jugglers Association</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#tickets">Get Tickets</a></li>
+    }
 
-          <li><a href="#show">Show</a></li>
-          <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#volunteer">Volunteer</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="content">
-      <div id="page-top" class="block">
-        <img id="clubs-background"src="Assets/svgs/clubs background.png" alt="Decoartive Juggling Clubs">
 
-        <div id="intro">
-          <h1>PhillyFest</h1>
-          <h2 style="font-family: Garamond;">June 12 - June 14</h2>
-          <div>
-            <h4>Circus Campus</h4>
+    #intro {
+      display: flex;
+      flex-direction: column;
+      align-content: space-around;
+      border: none;
+      margin: 0;
+      position: relative;
+      grid-column: 2/2;
+      grid-row: 2/3;
+      text-align: center;
+      gap: 1rem;
+      padding-top: 4rem;
+      padding-right: 7.5rem;
+      padding-bottom: 3rem;
+    }
+
+    #intro h1 {
+      font-size: 5em;
+      margin: 0;
+      color: #234059;
+    }
+
+    #intro h2 {
+      font-size: 3.5rem;
+    }
+
+    #intro h4 {
+      font-size: 1.5rem;
+    }
+
+    #intro p {
+      font-size: 1.5em;
+      line-height: 1.4em;
+      text-align: center;
+    }
+
+    
+
+    @media screen and (min-width: 1800px) {
+
+      #page-top {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 2fr;
+        width: 100%;
+        height: auto;
+
+      }
+
+      #intro {
+        gap: 1rem;
+        padding-top: 4rem;
+        padding-right: 7.5rem;
+        padding-bottom: 3rem;
+        padding-left: 8rem;
+      }
+
+    }
+
+    #fest-promo {
+      /* background-image: url("Assets/images/festival/PhillyFest 2025 3.jpg"); */
+      width: 100%;
+      aspect-ratio: 128/68;
+      /* background-color: #DDBD78; */
+      /* padding: 2rem 0; */
+      color: white;
+      text-align: left;
+      z-index: 2;
+
+    }
+
+    #fest-promo img {
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+      object-fit: contain;
+
+    }
+
+    #fest-promo h2 {
+      margin: 0;
+      margin-top: 2.2rem;
+
+      margin-left: 5%;
+      text-align: left;
+      font-size: 5em;
+      width: 90%;
+    }
+
+    #fest-promo h4 {
+      margin: 0;
+      margin-left: 5%;
+      text-align: left;
+      font-size: 1.9em;
+      width: 37%;
+    }
+
+    #show {
+      /* background-color:#b3c2e2; */
+      background-color: #59a2e5;
+      width: 100%;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    #performers {
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
+    }
+
+    #featured {
+      /* commented out rn */
+      width: 100%;
+      padding: 0 40%;
+    }
+
+    .performer {
+      width: 20%;
+    }
+
+    .performer img {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      margin-bottom: .5rem;
+    }
+
+    .performer p {
+      font-size: 1.3em;
+    }
+
+    #tickets {
+      background-color: #E5D6BD;
+      /* background-color: #59a2e5; */
+
+
+      /* background-color: #B1975F; */
+      width: 100%;
+      padding: 2rem 0;
+      text-align: center;
+      z-index: 2;
+    }
+
+    #tickets h3 {
+      padding: 1rem;
+    }
+
+    #schedule {
+      background-color: #eaf1fb;
+
+      /* background-color: #E5D6BD; */
+      width: 100%;
+      padding-top: 2rem;
+    }
+
+    #schedule-title {
+      text-align: center;
+    }
+
+    #schedule-grid {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      padding: 2rem 10%;
+    }
+
+    .day {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 25%;
+    }
+
+    .day h2 {
+      font-size: 2.9em;
+    }
+
+    .workshop {
+      /* background-color: #E5D6BD; */
+      background-color: #b7d2f1;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    .event {
+      /* background-color: #B1975F; */
+      background-color: #ddbd78;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    #volunteer {
+
+      background-color: #E5D6BD;
+      width: 100%;
+      padding: 2rem 0;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img id="paja-logo" src="Assets/logos/Logo 1/PAJA-Logo1-Color.png" alt="PAJA Logo" /></a>
+    <h1 class="title">Philadelphia Area Jugglers Association</h1>
+    <nav>
+      <ul>
+        <li><a href="#tickets">Get Tickets</a></li>
+
+        <li><a href="#show">Show</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#volunteer">Volunteer</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="content">
+    <div id="page-top" class="block">
+      <img id="clubs-background" src="Assets/svgs/clubs background.png" alt="Decoartive Juggling Clubs">
+
+      <div id="intro">
+        <h1>PhillyFest</h1>
+        <h2 style="font-family: Garamond;">June 12 - June 14, 2026</h2>
+        <div>
+          <h4>Circus Campus</h4>
           <h4>6452 Greene Street,</h4>
           <h4>Philadelphia, PA 19119</h4>
-          </div>
-          <!-- <a href="#tickets"><h3>Tickets and Pricing</h3></a> -->
-          <!-- Probably make not a button? -->
-          <p>
-            The Philadelphia Juggling Festival is a full weekend of juggling,
-            for professionals, avid hobbyists, and brand-new beginners! All are
-            welcome at the “Learn to Juggle” station, and if you’d rather just
-            watch the pros, the Saturday night Public Show will feature the best
-            of the best. The Festival is hosted at Circus Campus, in the West
-            Mt. Airy neighborhood of Philadelphia. Circus Campus features 20,000
-            sq ft of indoor training space: two large gymnasium spaces, smaller
-            classrooms for workshops, and Greg Kennedy’s Innovative Juggler
-            studio. There is also ample free parking and green outdoor space.
-          </p>
         </div>
+        <!-- <a href="#tickets"><h3>Tickets and Pricing</h3></a> -->
+        <p>
+          The Philadelphia Juggling Festival is a full weekend of juggling,
+          for professionals, avid hobbyists, and brand-new beginners! All are
+          welcome at the “Learn to Juggle” station, and if you’d rather just
+          watch the pros, the Saturday night Public Show will feature the best
+          of the best. The Festival is hosted at Circus Campus, in the West
+          Mt. Airy neighborhood of Philadelphia. Circus Campus features 20,000
+          sq ft of indoor training space: two large gymnasium spaces, smaller
+          classrooms for workshops, and Greg Kennedy’s Innovative Juggler
+          studio. There is also ample free parking and green outdoor space.
+        </p>
       </div>
-      <div id="tickets" class="block">
-        <h2>Tickets and Pricing</h2>
-        <h3>
-          Single Day Gym Pass...............................................$5
-        </h3>
-        <h3>
-          Show Ticket............................................................$20
-        </h3>
-        <h3>
-          Festival Pass............................................................$30
-        </h3>
-        <button>Buy Tickets</button>
-        <h3>
-          Tickets available to be purchased at the door with cash or Venmo
-        </h3>
-      </div>
-      <div id="fest-promo" class="block">
-        <!-- <img
-          id="fest-image"
-          src="Assets/images/festival/PhillyFest 2025 3.jpg"
-          alt="Festival Poster"
-        /> -->
-        <h2>Public Show</h2>
-        <h4>World class performers converge to put on a show that is the culmination of a weekend of excellent juggling.</h4>
-        </div>
-        <div id="show" class="block">
-        <h2>Show Lineup</h2>
-        <div id="performers">
-          <div class="performer">
+    </div>
+    <div id="tickets" class="block">
+      <h2>Tickets and Pricing</h2>
+      <h3>Festival Package (Pre-Registration).......................$25</h3>
+      <h3>
+        Festival Package.....................................................$30
+      </h3>
+      <h3>
+        Single Day Gym Pass..............................................$10
+      </h3>
+      <h3>
+        Public Show Ticket.................................................$25
+      </h3>
+
+
+      <button>Buy Tickets</button>
+      <h3>
+        Tickets available to be purchased at the door with cash or Venmo
+      </h3>
+    </div>
+    <div id="fest-promo" class="block">
+      <img id="fest-image" src="Assets/images/festival/PhillyFest 2025 3.jpg" alt="Festival Poster" />
+      <h2>Public Show</h2>
+      <h4>World class performers converge to put on a show that is the culmination of a weekend of excellent juggling.
+      </h4>
+    </div>
+    <div id="show" class="block">
+      <h2>Show Lineup</h2>
+      <div id="performers">
+        <!-- <div id="featured" class="performer">
             <img src="Assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
             <p>Chris Hodge grew up juggling and performing with his father and brothers as the Hodge Family Jugglers. He attended l'Ecole de Cirque de Quebec. Now, he is a family doctor in upstate NY.
-
-Jonah and Chris set up a gravitational forces lab together a year ago. The primary outcome of their research thus far has been the world record for juggling the most rings between 2 people.</p>
-          </div>
-          <div class="performer">
-            <img src="Assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
-            <p>Lauren Raske is a performer specializing in fire, light, and illusionary arts. As founder and creative director of the specialty artists agency, 7textures, she advocates for and manages a wide network of artistic talent across many disciplines and mediums. Her passion project is crafting site-specific stunt theater experiences like the Ghostly Circus, a 501c3 project of CultureTrust Philadelphia. Photo Credit: RD Buugeng</p>
-          </div>
-          <div class="performer">
-            <img src="Assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
-            <p>Alli Hart - aka The Hoop Doc - is a multidisciplinary hula hoop and circus artist based in Philadelphia. She is also a Doctor of Physical Therapy who specializes in treating performing artists including dancers and circus artists. She discovered her love for hula hoops and circus while studying dance at Drexel University. Coming from an extensive performing arts and gymnastics background, Alli has been hula hooping for 12 years and juggling hoops for 8 years. </p>
-          </div>
-          <div class="performer">
-            <img src="Assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
-            <p>Jonah Botvinick-Greenhouse specializes in dynamical systems, mathematical physics & inverse problems at Cornell's Center for Applied Mathematics. He also throws and catches things.</p>
-          </div>
-          <div class="performer">
-            <img src="Assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
-            <p>Tim Air-Walker is a self-taught Club Juggler and Content Creator based out of North Texas. He started juggling clubs in 2015 and almost instantly fell in love with Circular Aesthetics, Flat Throws, & Curvy Patterns within club juggling.</p>
-          </div>
-          <div class="performer">
-            <img src="Assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
-            <p>Tim Air-Walker is a self-taught Club Juggler and Content Creator based out of North Texas. He started juggling clubs in 2015 and almost instantly fell in love with Circular Aesthetics, Flat Throws, & Curvy Patterns within club juggling.</p>
-          </div>
+          Jonah and Chris set up a gravitational forces lab together a year ago. The primary outcome of their research thus far has been the world record for juggling the most rings between 2 people.</p>
+          </div> -->
+        <div class="performer">
+          <img src="Assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
+          <p>Chris Hodge grew up juggling and performing with his father and brothers as the Hodge Family Jugglers. He
+            attended l'Ecole de Cirque de Quebec. Now, he is a family doctor in upstate NY.
+            Jonah and Chris set up a gravitational forces lab together a year ago. The primary outcome of their research
+            thus far has been the world record for juggling the most rings between 2 people.</p>
+        </div>
+        <div class="performer">
+          <img src="Assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
+          <p>Lauren Raske is a performer specializing in fire, light, and illusionary arts. As founder and creative
+            director of the specialty artists agency, 7textures, she advocates for and manages a wide network of
+            artistic talent across many disciplines and mediums. Her passion project is crafting site-specific stunt
+            theater experiences like the Ghostly Circus, a 501c3 project of CultureTrust Philadelphia. Photo Credit: RD
+            Buugeng</p>
+        </div>
+        <div class="performer">
+          <img src="Assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
+          <p>Alli Hart - aka The Hoop Doc - is a multidisciplinary hula hoop and circus artist based in Philadelphia.
+            She is also a Doctor of Physical Therapy who specializes in treating performing artists including dancers
+            and circus artists. She discovered her love for hula hoops and circus while studying dance at Drexel
+            University. Coming from an extensive performing arts and gymnastics background, Alli has been hula hooping
+            for 12 years and juggling hoops for 8 years. </p>
+        </div>
+        <div class="performer">
+          <img src="Assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
+          <p>Jonah Botvinick-Greenhouse specializes in dynamical systems, mathematical physics & inverse problems at
+            Cornell's Center for Applied Mathematics. He also throws and catches things.</p>
+        </div>
+        <div class="performer">
+          <img src="Assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
+          <p>Tim Air-Walker is a self-taught Club Juggler and Content Creator based out of North Texas. He started
+            juggling clubs in 2015 and almost instantly fell in love with Circular Aesthetics, Flat Throws, & Curvy
+            Patterns within club juggling.</p>
+        </div>
+        <div class="performer">
+          <img src="Assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
+          <p>Tim Air-Walker is a self-taught Club Juggler and Content Creator based out of North Texas. He started
+            juggling clubs in 2015 and almost instantly fell in love with Circular Aesthetics, Flat Throws, & Curvy
+            Patterns within club juggling.</p>
         </div>
       </div>
+    </div>
 
-      <div id="schedule" class="block">
+    <div id="schedule" class="block">
       <h2 id="schedule-title">Schedule</h2>
       <div id="schedule-grid" class="block">
         <div class="day" id="friday">
@@ -267,6 +364,10 @@ Jonah and Chris set up a gravitational forces lab together a year ago. The prima
             <h5>5:00 PM - 10:00 PM</h5>
           </div>
           <div class="workshop">
+            <h4>Workshops To Be Announced</h4>
+            <h5>4:00 PM - 8:00 PM</h5>
+          </div>
+          <!-- <div class="workshop">
             <h4>Workshop 1</h4>
             <h5>Instructor 1 | ti:me - ti:me PM</h5>
             <p>Description of workshop 1</p>
@@ -275,20 +376,23 @@ Jonah and Chris set up a gravitational forces lab together a year ago. The prima
             <h4>Workshop 1</h4>
             <h5>Instructor 1 | ti:me - ti:me PM</h5>
             <p>Description of workshop 1</p>
-          </div>
-          <div class="workshop">
-            <h4>Workshop 1</h4>
-            <h5>Instructor 1 | ti:me - ti:me PM</h5>
-            <p>Description of workshop 1</p>
+          </div> -->
+          <div class="event">
+            <h4>Fire-Jam</h4>
+            <h5>9:30 PM - 10:30 PM</h5>
           </div>
         </div>
         <div class="day" id="saturday">
           <h2>Saturday</h2>
           <div class="event">
             <h4>Open Juggling</h4>
-            <h5>10:00 AM - 6:00 PM</h5>
+            <h5>10:00 AM - 7:00 PM</h5>
           </div>
           <div class="workshop">
+            <h4>Workshops To Be Announced</h4>
+            <h5>11:00 AM - 6:00 PM</h5>
+          </div>
+          <!-- <div class="workshop">
             <h4>Workshop 1</h4>
             <h5>Instructor 1 | ti:me - ti:me PM</h5>
             <p>Description of workshop 1</p>
@@ -297,8 +401,8 @@ Jonah and Chris set up a gravitational forces lab together a year ago. The prima
             <h4>Workshop 1</h4>
             <h5>Instructor 1 | ti:me - ti:me PM</h5>
             <p>Description of workshop 1</p>
-          </div>
-          <div class="workshop">
+          </div> -->
+          <!-- <div class="workshop">
             <h4>Workshop 1</h4>
             <h5>Instructor 1 | ti:me - ti:me PM</h5>
             <p>Description of workshop 1</p>
@@ -306,13 +410,14 @@ Jonah and Chris set up a gravitational forces lab together a year ago. The prima
           <div class="workshop">
             <h4>Workshop 1</h4>
             <h5>Instructor 1 | ti:me - ti:me PM</h5>
-            <p>Description of workshop 1</p>
-          </div>
+            <p>Generic text, often referred to as filler, placeholder, or dummy text, is
+non-meaningful content used in design, publishing, and software testing to simulate final layouts without causing distractions. Common examples include Lorem Ipsum or generated filler in Word (e.g., =rand(p,s)). It represents plain text data, such as ASCII, often used for testing printer drivers or layout formatting. </p>
+          </div> -->
           <div class="event">
             <h4>Games</h4>
             <h5>2:00 PM - 4:00 PM</h5>
           </div>
-          <div class="workshop">
+          <!-- <div class="workshop">
             <h4>Workshop 1</h4>
             <h5>Instructor 1 | ti:me - ti:me PM</h5>
             <p>Description of workshop 1</p>
@@ -321,23 +426,23 @@ Jonah and Chris set up a gravitational forces lab together a year ago. The prima
             <h4>Workshop 1</h4>
             <h5>Instructor 1 | ti:me - ti:me PM</h5>
             <p>Description of workshop 1</p>
-          </div>
+          </div> -->
           <div class="event">
             <h4>Public Show</h4>
-            <h5>7:30 PM</h5>
-          </div>
-          <div class="event">
-            <h4>Post Show Fire-Jam</h4>
-            <h5>9:00 PM</h5>
+            <h5>7:00 PM - 10:00 PM</h5>
           </div>
         </div>
         <div class="day" id="sunday">
           <h2>Sunday</h2>
           <div class="event">
             <h4>Open Juggling</h4>
-            <h5>10:00 AM - 4:00 PM</h5>
+            <h5>9:00 AM - 2:00 PM</h5>
           </div>
           <div class="workshop">
+            <h4>Workshops To Be Announced</h4>
+            <h5>10:00 AM - 1:00 PM</h5>
+          </div>
+          <!-- <div class="workshop">
             <h4>Workshop 1</h4>
             <h5>Instructor 1 | ti:me - ti:me PM</h5>
             <p>Description of workshop 1</p>
@@ -351,37 +456,38 @@ Jonah and Chris set up a gravitational forces lab together a year ago. The prima
             <h4>Workshop 1</h4>
             <h5>Instructor 1 | ti:me - ti:me PM</h5>
             <p>Description of workshop 1</p>
-          </div>
+          </div> -->
         </div>
       </div>
-      </div>
-      <div id="volunteer" class="block">
-        <h2>Volunteer</h2>
-        <p>Join our team of volunteers to help make this festival a success!</p>
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQL-the-volunteer-form-Ufq2H78w"
-          >Get Involved!</a
-        >
-      </div>
     </div>
-    <footer>
-      <div id="footer-top">
-        <h4>Newsletter</h4>
-        <button>Signup</button>
-        <h4>Calendar</h4>
-        <button>Download</button>
-      </div>
-      <div id="footer-bottom">
-        <ul>
-          <li><a href="#">Any helpful links we want in here and below</a></li>
-          <li><a href="#">Philly Fest</a></li>
-          <li><a href="#">Local Orgs</a></li>
-        </ul>
-      </div>
-      <p>
-        &copy; 2025 Philadelphia Area Jugglers Association. All rights reserved.
-      </p>
-    </footer>
-    <script src="" async defer></script>
-  </body>
+    <div id="volunteer" class="block">
+      <h2>Volunteer</h2>
+      <h4 style="font-weight: normal;">Join our team of volunteers to help make this festival a success!</h4>
+      <h4><a style="text-decoration: underline; font-weight: normal;"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeeDeH5PuXLIHQHk39fV0E6ZJDBoKu-evOBrzku4nUfq2H78w/viewform">Get
+          Involved!</a></h4>
+      <!-- Outdated -->
+    </div>
+  </div>
+  <footer>
+    <div id="footer-top">
+      <h4>Newsletter</h4>
+      <input type="text" id="sign-up" name="email" placeholder="juggler@gmail.com"></input>
+      <h4>Calendar</h4>
+      <button>Download</button>
+    </div>
+    <div id="footer-bottom">
+      <ul>
+        <li><a href="#">Any helpful links we want in here and below</a></li>
+        <li><a href="#">PhillyFest</a></li>
+        <li><a href="#">Local Orgs</a></li>
+      </ul>
+    </div>
+    <p>
+      &copy; 2025 Philadelphia Area Jugglers Association. All rights reserved.
+    </p>
+  </footer>
+  <script src="" async defer></script>
+</body>
+
 </html>
