@@ -70,6 +70,7 @@ h6, p {
 
 /* Header styles */
 header {
+    position:relative;
     top: 0;
     left: 0;
     background-color: #5087B7;
@@ -77,6 +78,7 @@ header {
     flex-direction: column;
     flex-wrap: nowrap;
     grid-gap: 0;
+    z-index: 5;
 
     color: #13110C;
     /* padding: 1rem 0; */
