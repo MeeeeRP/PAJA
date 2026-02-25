@@ -7,6 +7,11 @@
     <title>Calendar — PAJA</title>
     <meta name="description" content="PAJA events calendar">
     <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/stylesheet.css" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/logos/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/logos/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/logos/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
     <style>
         /* Local Organizations Styles */
         #local {
@@ -56,6 +61,11 @@
             border: solid 2px #000000;
             border-radius: 2rem;
         }
+        iframe {
+            aspect-ratio: 6/2;
+            max-width: 80%;
+
+        }
     </style>
 </head>
 
@@ -74,15 +84,11 @@
                 </ul>
             </nav>
         </header>
-        <main id="content">
+        <div id="content">
             <h2>Events Calendar</h2>
             <!-- Calendar content goes here -->
-            <iframe id="calendar"
-                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=NTliMzdpYmNzbXZwOXA1ZWJib3RwY2EwdXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23b39ddb"
-                style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-            <h4>Do you have a Juggling Club, Festival, or Performance to share? Let us know here <a
-                    href="mailto:contact@paja.org">contact@paja.org</a></h4>
-            <div id="local">
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&showTitle=0&src=Y2E0NjdhYWZiNmEzNTU2YTk0YmEyYjZiNzRhZThhNTk5YjcwNjM1NzcxYzljNjg0ZGQ5OTk3ZGRkZjQwNmM3MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=OWRjMjgxMzAwYzhlZWUwMTc0NTNkZGMyOTU2MDNkNTI0Y2ZlYzMxOTIzMzk2M2VkNWE1ODU4YjJmMzg5ODdiZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ODhiYzdkNjhlZGQ1ZmZmOGE3MmMyZjliNzY5YmU3YWUzNzljMThkMjQ4MTk1Y2M5N2VkYzlmN2JmOTcwZDA4ZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23c0ca33&color=%23f6bf26&color=%23f6bf26" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            <!-- <div id="local">
                 <h2 class="title">Philadelphia Area Juggling Clubs</h2>
                 <div class="local-org">
                     <a href="https://www.facebook.com/profile.php?id=61557358186937"><img class="logo"
@@ -181,26 +187,18 @@
                                 href="mailto:contact@paja.org">damian@aquilina.org</a></h4>
                     </div>
                 </div>
-            </div>
-            </div>
-
-        </main>
-        <footer>
-            <div id="footer-top">
-                <h4>Newsletter</h4>
-                <input type="text" id="sign-up" name="email" placeholder="juggler@gmail.com"></input>
-                <h4>Calendar</h4>
-                <button>Download</button>
-            </div>
+            </div> -->
+            <footer>
             <div id="footer-bottom">
-                <ul>
-                    <li><a href="#">Any helpful links we want in here and below</a></li>
-                    <li><a href="#">Philly Fest</a></li>
-                    <li><a href="#">Local Orgs</a></li>
-                </ul>
+            <ul style="list-style-type: none;">
+                <li><a href="#">Follow Us</a></li>
+                <li><a href="mailto:phillyareajugglers@gmail.com"><img class="icon" src="assets/svgs/email-svgrepo-com.svg" alt="Join email list icon"></a><a href="https://www.facebook.com/profile.php?id=61566372571407"><img class="icon" src="assets/svgs/facebook-svgrepo-com.svg" alt="Join facebook icon"></a><a href="calendar.html"><img class="icon" src="assets/svgs/calendar-lines-svgrepo-com.svg" alt="Join google calendar icon"></a></li>
+                <li>&copy; 2026 Philadelphia Area Jugglers Association</li>
+            </ul>
             </div>
-            <p>&copy; 2025 Philadelphia Area Jugglers Association. All rights reserved.</p>
         </footer>
+
+        </div>
     </body>
 
 </html>

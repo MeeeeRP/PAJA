@@ -8,6 +8,10 @@
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/css/stylesheet.css" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/logos/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/logos/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/logos/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
   <style>
     #clubs-background {
       position: absolute;
@@ -168,7 +172,6 @@
 
     #tickets {
       background-color: #E5D6BD;
-      /* background-color: #59a2e5; */
 
 
       /* background-color: #B1975F; */
@@ -214,6 +217,14 @@
       font-size: 2.9em;
     }
 
+      @media screen and (max-width: 1500px) {
+        
+         .day h2 {
+      font-size: 2.9vw;
+    }
+
+      }
+
     .workshop {
       /* background-color: #E5D6BD; */
       background-color: #b7d2f1;
@@ -227,14 +238,51 @@
       padding: 1rem;
       border-radius: 10px;
     }
+    #food {
+      background-color: #59a2e5;
+      width: 100%;
+      padding: 2em 10%;
+    }
+#food h3 {
+    text-align: center;
+    padding-bottom:.5em;
+}
+
+    #restaurants {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: .5rem;
+      padding-left: 2rem;
+      width: 100%;
+      justify-content: space-around;
+    }
+    .restaurant-column {
+      height: 100%;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+    }
+    .spacer {
+      width:1px;
+      border:#234059 1px solid;
+    }
+  
+    .restaurant-column a {
+      font-size: 1.5em;
+    }
+
+    .restaurant-column h2 {
+      font-size: 1.75em;
+    }
 
     #volunteer {
-
       background-color: #E5D6BD;
       width: 100%;
       padding: 2rem 0;
       text-align: center;
     }
+
   </style>
 </head>
 
@@ -280,22 +328,17 @@
     </div>
     <div id="tickets" class="block">
       <h2>Tickets and Pricing</h2>
-      <h3>Festival Package (Pre-Registration).......................$25</h3>
+      <h3>Full Package Pre-Registration..................................$25</h3>
       <h3>
-        Festival Package.....................................................$30
+        Full Package On-Site................................................$35
       </h3>
       <h3>
-        Single Day Gym Pass..............................................$10
+        Day Pass....................................................................$10
       </h3>
       <h3>
-        Public Show Ticket.................................................$25
+        Show Ticket Only......................................................$25
       </h3>
-
-
-      <button>Buy Tickets</button>
-      <h3>
-        Tickets available to be purchased at the door with cash or Venmo
-      </h3>
+      <a href="https://events.ticketleap.com/events/phillyareajugglers" target="_blank" id="btn-constructor" rel="noreferrer" style="background-color: #5087B7; border: 1px solid #5087B7; border-radius: 22.5rem; color: rgb(0, 0, 0); cursor: pointer; display: inline-block; font-family: Garamond, Text,Times, serif; font-size: 1.25rem; font-weight: 600; line-height: 1.5; min-width: 150px; padding: 8px 20px; text-align: center; text-decoration: none; text-wrap: nowrap; transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; user-select: none; vertical-align: middle;">Buy Tickets</a>
     </div>
     <div id="fest-promo" class="block">
       <img id="fest-image" src="assets/images/festival/PhillyFest 2025 3.jpg" alt="Festival Poster" />
@@ -304,14 +347,15 @@
       </h4>
     </div>
     <div id="show" class="block">
-      <h2>Show Lineup</h2>
-      <div id="performers">
+      <h2>Performer Lineup will be announced soon!</h2>
+      <!-- <h3 style="font-weight: normal;">Performer Lineup will be announced soon!</h3> -->
+      <!-- <div id="performers"> -->
         <!-- <div id="featured" class="performer">
             <img src="assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
             <p>Chris Hodge grew up juggling and performing with his father and brothers as the Hodge Family Jugglers. He attended l'Ecole de Cirque de Quebec. Now, he is a family doctor in upstate NY.
           Jonah and Chris set up a gravitational forces lab together a year ago. The primary outcome of their research thus far has been the world record for juggling the most rings between 2 people.</p>
           </div> -->
-        <div class="performer">
+        <!-- <div class="performer">
           <img src="assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
           <p>Chris Hodge grew up juggling and performing with his father and brothers as the Hodge Family Jugglers. He
             attended l'Ecole de Cirque de Quebec. Now, he is a family doctor in upstate NY.
@@ -350,8 +394,8 @@
           <p>Tim Air-Walker is a self-taught Club Juggler and Content Creator based out of North Texas. He started
             juggling clubs in 2015 and almost instantly fell in love with Circular Aesthetics, Flat Throws, & Curvy
             Patterns within club juggling.</p>
-        </div>
-      </div>
+        </div> 
+      </div> -->
     </div>
 
     <div id="schedule" class="block">
@@ -460,34 +504,52 @@ non-meaningful content used in design, publishing, and software testing to simul
         </div>
       </div>
     </div>
+    <div id="food">
+      <h2>Food and Drink</h2>
+      <h3 style="font-weight:normal">Welcome to the neighborhood of West Mt. Airy! Here at Circus Campus, you can find snack and drink vending machines (on the lower level) and water fountains / bottle fillers.</h4>
+      <!-- <h3 style="font-weight: normal; text-align: left;">Food options nearby:</h4> -->
+        <div id="restaurants">
+<div class="restaurant-column">
+<h2>3-minute walk:</h2>
+    <a href="https://totospizzeria.m.takeout7.com/home">Toto's Pizzeria</a>
+    <a href="https://locations.familydollar.com/pa/philadelphia/6555-greene-st">Family Dollar</a>
+</div>
+<div class = "spacer"></div>
+<div class="restaurant-column">
+<h2>12-minute walk:</h2>
+<a href="https://highpointphilly.com/">High Point Cafe</a>
+<a href="https://weaversway.coop/stores/stores-mt-airy/">Weavers Way Co-Op</a>
+</div>
+<div class = "spacer"></div>
+<div class="restaurant-column">
+<h2>5-minute drive:</h2>
+  <a href="https://mountairytaproom.com/">Mount Airy Tap Room</a>
+  <a href="https://www.malelani.cafe/">Malelani Cafe</a>
+  <a href="https://www.facebook.com/people/McMenamins-Tavern/100063715086245/">McMenamin's Tavern</a></li>
+  <a href="https://www.toskabrewery.com/">Toska</a>
+  </div>
+      </div>
+
+    </div>
     <div id="volunteer" class="block">
       <h2>Volunteer</h2>
-      <h4 style="font-weight: normal;">Join our team of volunteers to help make this festival a success!</h4>
+      <h3 style="font-weight: normal;">Join our team of volunteers to help make this festival a success!</h3>
       <h4><a style="text-decoration: underline; font-weight: normal;"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSeeDeH5PuXLIHQHk39fV0E6ZJDBoKu-evOBrzku4nUfq2H78w/viewform">Get
+          href="https://forms.gle/aNqnrZGLwMS5HXpXA">Get
           Involved!</a></h4>
       <!-- Outdated -->
     </div>
+        <footer>
+            <div id="footer-bottom">
+            <ul style="list-style-type: none;">
+                <li><a href="#">Follow Us</a></li>
+                <li><a href="mailto:phillyareajugglers@gmail.com"><img class="icon" src="assets/svgs/email-svgrepo-com.svg" alt="Join email list icon"></a><a href="https://www.facebook.com/profile.php?id=61566372571407"><img class="icon" src="assets/svgs/facebook-svgrepo-com.svg" alt="Join facebook icon"></a><a href="calendar.html"><img class="icon" src="assets/svgs/calendar-lines-svgrepo-com.svg" alt="Join google calendar icon"></a></li>
+                <li>&copy; 2026 Philadelphia Area Jugglers Association</li>
+            </ul>
+            </div>
+        </footer>
+
   </div>
-  <footer>
-    <div id="footer-top">
-      <h4>Newsletter</h4>
-      <input type="text" id="sign-up" name="email" placeholder="juggler@gmail.com"></input>
-      <h4>Calendar</h4>
-      <button>Download</button>
-    </div>
-    <div id="footer-bottom">
-      <ul>
-        <li><a href="#">Any helpful links we want in here and below</a></li>
-        <li><a href="#">PhillyFest</a></li>
-        <li><a href="#">Local Orgs</a></li>
-      </ul>
-    </div>
-    <p>
-      &copy; 2025 Philadelphia Area Jugglers Association. All rights reserved.
-    </p>
-  </footer>
-  <script src="" async defer></script>
 </body>
 
 </html>
