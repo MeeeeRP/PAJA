@@ -149,12 +149,6 @@
       gap: 3rem;
     }
 
-    #featured {
-      /* commented out rn */
-      width: 100%;
-      padding: 0 40%;
-    }
-
     .performer {
       width: 20%;
     }
@@ -169,6 +163,30 @@
     .performer p {
       font-size: 1.3em;
     }
+
+    #featured {
+      width: 100%;
+      padding: 0 10%;
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+      gap:1rem;
+      align-items: center;
+
+    }
+    #featured img {
+      width: 30%;
+      height: auto;
+      margin: 0;
+      margin-right:.5rem;
+    }
+    #featured p {
+      font-size: 1.5em;
+      width: 50%;
+      text-align:left;
+    }
+
+
 
     #tickets {
       background-color: #E5D6BD;
@@ -349,13 +367,13 @@
     <div id="show" class="block">
       <h2>Performer Lineup will be announced soon!</h2>
       <!-- <h3 style="font-weight: normal;">Performer Lineup will be announced soon!</h3> -->
-      <!-- <div id="performers"> -->
-        <!-- <div id="featured" class="performer">
+      <div id="performers">
+        <div id="featured" class="performer">
             <img src="assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
             <p>Chris Hodge grew up juggling and performing with his father and brothers as the Hodge Family Jugglers. He attended l'Ecole de Cirque de Quebec. Now, he is a family doctor in upstate NY.
           Jonah and Chris set up a gravitational forces lab together a year ago. The primary outcome of their research thus far has been the world record for juggling the most rings between 2 people.</p>
-          </div> -->
-        <!-- <div class="performer">
+          </div>
+        <div class="performer">
           <img src="assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
           <p>Chris Hodge grew up juggling and performing with his father and brothers as the Hodge Family Jugglers. He
             attended l'Ecole de Cirque de Quebec. Now, he is a family doctor in upstate NY.
@@ -395,7 +413,7 @@
             juggling clubs in 2015 and almost instantly fell in love with Circular Aesthetics, Flat Throws, & Curvy
             Patterns within club juggling.</p>
         </div> 
-      </div> -->
+      </div>
     </div>
 
     <div id="schedule" class="block">
