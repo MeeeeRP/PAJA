@@ -1,0 +1,164 @@
+/* --- Base Styles --- */
+.menu-btn1,
+.menu-btn2,
+.menu-btn3,
+.menu-btn4,
+.menu-btn5 {
+    display: none; /* Hide the actual checkbox */
+}
+
+/* --- Desktop Layout (Default) --- */
+.mobile-only-label {
+    display: none; /* Hide label on desktop */
+}
+.toggle-content {
+    display: block; /* Visible by default on desktop */
+}
+
+/* --- Mobile Layout (Media Query) --- */
+@media screen and (max-width: 768px) {
+    .mobile-only-label {
+        display: block; /* Show dropdown trigger on mobile */
+        padding: 10px;
+        background-color: #eee;
+        cursor: pointer;
+    }
+
+    .toggle-content1,
+    .toggle-content2,
+    .toggle-content3,
+    .toggle-content4,
+    .toggle-content5 {
+        display: none; /* Hide text by default on mobile */
+        padding: 10px;
+        border: 1px solid #eee;
+    }
+
+    /* checkbox hack: Show content when input is checked */
+    .menu-btn1:checked ~ .toggle-content1 {
+        display: block; /* Show on click */
+    }
+    .menu-btn2:checked ~ .toggle-content2 {
+        display: block; /* Show on click */
+    }
+    .menu-btn3:checked ~ .toggle-content3 {
+        display: block; /* Show on click */
+    }
+    .menu-btn4:checked ~ .toggle-content4 {
+        display: block; /* Show on click */
+    }
+    .menu-btn5:checked ~ .toggle-content5 {
+        display: block; /* Show on click */
+    }
+
+    .performer,
+    .member {
+        width: 60%;
+    }
+    .day {
+        max-width: 100%;
+        margin-bottom: 20px;
+        width: 70%;
+    }
+    .day h2 {
+        font-size: 2.1rem;
+    }
+    .day h4 {
+        font-size: 1.4rem;
+    }
+    .day h5 {
+        font-size: 1.1rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    #featured,
+    #emcee {
+        flex-direction: column;
+        width: 100%;
+    }
+    #featured p,
+    #featured img,
+    #emcee p,
+    #emcee img {
+        width: 100%;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    #restaurants {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .restaurant-column {
+        width: 100%;
+    }
+    .spacer {
+        width: 100%;
+    }
+    #tickets {
+        padding: 1.5rem 0.5rem;
+    }
+    .desktop-tickets {
+        display: none;
+    }
+    .mobile-tickets {
+        display: block;
+    }
+    #tickets h3 {
+        padding: 0.4rem;
+    }
+    #fest-promo {
+        background-image: url("../images/festival/PhillyFest 2025 3.jpg");
+        min-height: 300px;
+        background-size: 200% auto;
+
+        /* aspect-ratio: 16/10; */
+    }
+
+    #fest-promo h2 {
+        margin: 0;
+        margin-top: 2.2rem;
+
+        margin-left: 5%;
+        text-align: left;
+        font-size: 10vw;
+        width: 90%;
+    }
+
+    #fest-promo h4 {
+        margin: 0;
+        margin-left: 5%;
+        text-align: left;
+        font-size: 5vw;
+        width: 80%;
+    }
+    #intro {
+        padding: 1rem;
+        padding-top: 5.5rem;
+    }
+    #intro h1 {
+        font-size: 3.2rem;
+        text-align: center;
+    }
+    #intro h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    #page-top {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    #executive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 2rem;
+    }
+}

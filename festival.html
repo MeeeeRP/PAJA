@@ -8,300 +8,12 @@
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/css/stylesheet.css" />
+  <link rel="stylesheet" href="assets/css/festival.css" />
+  <link rel="stylesheet" href="assets/css/mobile.css" />
 <link rel="apple-touch-icon" sizes="180x180" href="assets/logos/favicon_io/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/logos/favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/logos/favicon_io/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-  <style>
-    #clubs-background {
-      position: absolute;
-      width: 100%;
-      justify-self: center;
-      z-index: -1;
-      top: 0
-    }
-
-    #page-top {
-      position: relative;
-      display: grid;
-      grid-template-columns: 1fr 3fr;
-      grid-template-rows: 1fr 3fr;
-      width: 100%;
-      height: auto;
-      margin: 0;
-      top: 0;
-      z-index: 1;
-      background-color: #eaf1fb;
-
-    }
-
-
-    #intro {
-      display: flex;
-      flex-direction: column;
-      align-content: space-around;
-      border: none;
-      margin: 0;
-      position: relative;
-      grid-column: 2/2;
-      grid-row: 2/3;
-      text-align: center;
-      gap: 1rem;
-      padding-top: 4rem;
-      padding-right: 7.5rem;
-      padding-bottom: 3rem;
-    }
-
-    #intro h1 {
-      font-size: 5em;
-      margin: 0;
-      color: #234059;
-    }
-
-    #intro h2 {
-      font-size: 3.5rem;
-    }
-
-    #intro h4 {
-      font-size: 1.5rem;
-    }
-
-    #intro p {
-      font-size: 1.5em;
-      line-height: 1.4em;
-      text-align: center;
-    }
-
-    
-
-    @media screen and (min-width: 1800px) {
-
-      #page-top {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        grid-template-rows: 1fr 2fr;
-        width: 100%;
-        height: auto;
-
-      }
-
-      #intro {
-        gap: 1rem;
-        padding-top: 4rem;
-        padding-right: 7.5rem;
-        padding-bottom: 3rem;
-        padding-left: 8rem;
-      }
-
-    }
-
-    #fest-promo {
-      /* background-image: url("assets/images/festival/PhillyFest 2025 3.jpg"); */
-      width: 100%;
-      aspect-ratio: 128/68;
-      /* background-color: #DDBD78; */
-      /* padding: 2rem 0; */
-      color: white;
-      text-align: left;
-      z-index: 2;
-
-    }
-
-    #fest-promo img {
-      width: 100%;
-      position: absolute;
-      z-index: -1;
-      object-fit: contain;
-
-    }
-
-    #fest-promo h2 {
-      margin: 0;
-      margin-top: 2.2rem;
-
-      margin-left: 5%;
-      text-align: left;
-      font-size: 5em;
-      width: 90%;
-    }
-
-    #fest-promo h4 {
-      margin: 0;
-      margin-left: 5%;
-      text-align: left;
-      font-size: 1.9em;
-      width: 37%;
-    }
-
-    #show {
-      /* background-color:#b3c2e2; */
-      background-color: #59a2e5;
-      width: 100%;
-      padding: 2rem 0;
-      text-align: center;
-    }
-
-    #performers {
-      padding: 2rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 3rem;
-    }
-
-    .performer {
-      width: 20%;
-    }
-
-    .performer img {
-      width: 100%;
-      height: auto;
-      margin: 0;
-      margin-bottom: .5rem;
-    }
-
-    .performer p {
-      font-size: 1.3em;
-    }
-
-    #featured {
-      width: 100%;
-      padding: 0 10%;
-      display:flex;
-      flex-direction: row;
-      justify-content: center;
-      gap:1rem;
-      align-items: center;
-
-    }
-    #featured img {
-      width: 30%;
-      height: auto;
-      margin: 0;
-      margin-right:.5rem;
-    }
-    #featured p {
-      font-size: 1.5em;
-      width: 50%;
-      text-align:left;
-    }
-
-
-
-    #tickets {
-      background-color: #E5D6BD;
-
-
-      /* background-color: #B1975F; */
-      width: 100%;
-      padding: 2rem 0;
-      text-align: center;
-      z-index: 2;
-    }
-
-    #tickets h3 {
-      padding: 1rem;
-    }
-
-    #schedule {
-      background-color: #eaf1fb;
-
-      /* background-color: #E5D6BD; */
-      width: 100%;
-      padding-top: 2rem;
-    }
-
-    #schedule-title {
-      text-align: center;
-    }
-
-    #schedule-grid {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
-      padding: 2rem 10%;
-    }
-
-    .day {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 25%;
-    }
-
-    .day h2 {
-      font-size: 2.9em;
-    }
-
-      @media screen and (max-width: 1500px) {
-        
-         .day h2 {
-      font-size: 2.9vw;
-    }
-
-      }
-
-    .workshop {
-      /* background-color: #E5D6BD; */
-      background-color: #b7d2f1;
-      padding: 1rem;
-      border-radius: 10px;
-    }
-
-    .event {
-      /* background-color: #B1975F; */
-      background-color: #ddbd78;
-      padding: 1rem;
-      border-radius: 10px;
-    }
-    #food {
-      background-color: #59a2e5;
-      width: 100%;
-      padding: 2em 10%;
-    }
-#food h3 {
-    text-align: center;
-    padding-bottom:.5em;
-}
-
-    #restaurants {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: .5rem;
-      padding-left: 2rem;
-      width: 100%;
-      justify-content: space-around;
-    }
-    .restaurant-column {
-      height: 100%;
-      width: 30%;
-      display: flex;
-      flex-direction: column;
-    }
-    .spacer {
-      width:1px;
-      border:#234059 1px solid;
-    }
-  
-    .restaurant-column a {
-      font-size: 1.5em;
-    }
-
-    .restaurant-column h2 {
-      font-size: 1.75em;
-    }
-
-    #volunteer {
-      background-color: #E5D6BD;
-      width: 100%;
-      padding: 2rem 0;
-      text-align: center;
-    }
-
-  </style>
 </head>
 
 <body>
@@ -344,9 +56,10 @@
         </p>
       </div>
     </div>
-    <div id="tickets" class="block">
+    <div id="tickets"  class="block">
       <h2>Tickets and Pricing</h2>
-      <h3>Full Package Pre-Registration..................................$25</h3>
+      <div class="desktop-tickets">
+        <h3>Full Package Pre-Registration..................................$25</h3>
       <h3>
         Full Package On-Site................................................$35
       </h3>
@@ -356,63 +69,75 @@
       <h3>
         Show Ticket Only......................................................$25
       </h3>
-      <a href="https://events.ticketleap.com/events/phillyareajugglers" target="_blank" id="btn-constructor" rel="noreferrer" style="background-color: #5087B7; border: 1px solid #5087B7; border-radius: 22.5rem; color: rgb(0, 0, 0); cursor: pointer; display: inline-block; font-family: Garamond, Text,Times, serif; font-size: 1.25rem; font-weight: 600; line-height: 1.5; min-width: 150px; padding: 8px 20px; text-align: center; text-decoration: none; text-wrap: nowrap; transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; user-select: none; vertical-align: middle;">Buy Tickets</a>
+      </div>
+      <div class="mobile-tickets">
+      <h3>Full Package Pre-Registration - $25</h3>
+      <h3>
+        Full Package On-Site - $35
+      </h3>
+      <h3>
+        Day Pass - $10
+      </h3>
+      <h3>
+        Show Ticket Only - $25
+      </h3>
+      </div>
+      <a href="https://events.ticketleap.com/events/phillyareajugglers" target="_blank" id="btn-constructor" rel="noreferrer" style="background-color: #5087B7; border: 1px solid #5087B7; border-radius: 22.5rem; color: rgb(0, 0, 0); cursor: pointer; display: inline-block; font-family: Garamond, Text,Times, serif; font-size: 1.25rem; font-weight: 600; line-height: 1.5; min-width: 150px; padding: 8px 20px; text-align: center; text-decoration: none; text-wrap: nowrap; transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; user-select: none; vertical-align: middle; margin-top:.5rem;">Buy Tickets</a>
     </div>
     <div id="fest-promo" class="block">
-      <img id="fest-image" src="assets/images/festival/PhillyFest 2025 3.jpg" alt="Festival Poster" />
+      <!-- <img id="fest-image" src="assets/images/festival/PhillyFest 2025 3.jpg" alt="Festival Poster" /> -->
       <h2>Public Show</h2>
       <h4>World class performers converge to put on a show that is the culmination of a weekend of excellent juggling.
       </h4>
     </div>
     <div id="show" class="block">
-      <h2>Performer Lineup will be announced soon!</h2>
+      <h2>Performer Lineup</h2>
       <!-- <h3 style="font-weight: normal;">Performer Lineup will be announced soon!</h3> -->
       <div id="performers">
         <div id="featured" class="performer">
-            <img src="assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
-            <p>Chris Hodge grew up juggling and performing with his father and brothers as the Hodge Family Jugglers. He attended l'Ecole de Cirque de Quebec. Now, he is a family doctor in upstate NY.
-          Jonah and Chris set up a gravitational forces lab together a year ago. The primary outcome of their research thus far has been the world record for juggling the most rings between 2 people.</p>
+          <h2 >Featured Performer: Kellin Quinn</h2>
+            <img src="assets/images/festival/performers/kellin-quinn-1024.jpg" alt="Performer 1" />
+<p>Kellin Quinn has been called the greatest juggler of all time. He’s also been called a pretty good above average juggler. You can decide for yourself. 
+<br><br>Growing up in the rarely mentioned St. Louis, MO. Kellin attended a youth circus by the name of Circus Harmony. A training program that has fostered some of the top circus stars midwest America had to offer. By the time he became a young adult he was already world renowned for his signature style and creative juggling flair. He then honed in on that passion at the National Circus School in Montreal Canada. Graduating in 2018 ready to take on the world he did just that. 
+<br><br>His accomplishments are so great they can’t be measured. But they can be listed;
+<br><br>Gold medalist at the international jugglers association festival, people’s choice at that same festival 2 years in a row, as well as people’s choice at Young Stage circus festival in Basel. 
+</p>
           </div>
-        <div class="performer">
-          <img src="assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
-          <p>Chris Hodge grew up juggling and performing with his father and brothers as the Hodge Family Jugglers. He
-            attended l'Ecole de Cirque de Quebec. Now, he is a family doctor in upstate NY.
-            Jonah and Chris set up a gravitational forces lab together a year ago. The primary outcome of their research
-            thus far has been the world record for juggling the most rings between 2 people.</p>
+          <div>
+
+        <div class="performer" id="emcee">
+              <h2>Master of Ceremonies: David Darwin</h2>
+          <!-- <h3>Master of Ceremonies</h3> -->
+          <img src="assets/images/festival/performers/dsc06251-edit.JPG.jpeg" alt="Performer 1" />
+
+
+
+          <!-- The Mobile Toggle Button -->
+          <!-- <label for="menu-btn1" class="mobile-only-label">Click for Text ▾</label>
+          <input type="checkbox" id="menu-btn1" class="menu-btn1" /> -->
+
+          <!-- The Text Content -->
+          <!-- <div class="toggle-content1"> -->
+            <p>David Darwin invites you to step inside a world of his own creation, a place where the chains of technology can be broken by the spectacle of inspired live performance. He has evolved past sideshow into a new age of vaudeville - the one man guaranteed to astound audiences of all ages!
+<br>David is a child of the world, but Philadelphia natives can feast on his remarkable performances in their natural habitat: at a local library, theater, or bar. He has explored far and wide in his quest for the unusual, performing in venues across the land, and some of you may recognize his unique spark from NBC’s, “America’s Got Talent”.
+<br>Each of David's performances is specifically adapted to captivate the audience at hand. From death-defying stunts to clean comedy and juggling, David Darwin does it all. He is the juggling contortionist who can astound you with song, skill and captivating surprises. He is no stranger to the bizarre, and brings you an unparalleled mastery of sword swallowing, glass walking, and fire manipulation. David will share his 16 years of experience and astonishing command of his craft to delight your audience. He is the natural selection for your needs--entertainment evolved!</p>
+          <!-- </div> -->
+          </div>
+
         </div>
-        <div class="performer">
-          <img src="assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
-          <p>Lauren Raske is a performer specializing in fire, light, and illusionary arts. As founder and creative
-            director of the specialty artists agency, 7textures, she advocates for and manages a wide network of
-            artistic talent across many disciplines and mediums. Her passion project is crafting site-specific stunt
-            theater experiences like the Ghostly Circus, a 501c3 project of CultureTrust Philadelphia. Photo Credit: RD
-            Buugeng</p>
-        </div>
-        <div class="performer">
-          <img src="assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
-          <p>Alli Hart - aka The Hoop Doc - is a multidisciplinary hula hoop and circus artist based in Philadelphia.
-            She is also a Doctor of Physical Therapy who specializes in treating performing artists including dancers
-            and circus artists. She discovered her love for hula hoops and circus while studying dance at Drexel
-            University. Coming from an extensive performing arts and gymnastics background, Alli has been hula hooping
-            for 12 years and juggling hoops for 8 years. </p>
-        </div>
-        <div class="performer">
-          <img src="assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
-          <p>Jonah Botvinick-Greenhouse specializes in dynamical systems, mathematical physics & inverse problems at
-            Cornell's Center for Applied Mathematics. He also throws and catches things.</p>
-        </div>
-        <div class="performer">
-          <img src="assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
-          <p>Tim Air-Walker is a self-taught Club Juggler and Content Creator based out of North Texas. He started
-            juggling clubs in 2015 and almost instantly fell in love with Circular Aesthetics, Flat Throws, & Curvy
-            Patterns within club juggling.</p>
-        </div>
-        <div class="performer">
-          <img src="assets/images/festival/performers/temp show pfp.jpeg" alt="Performer 1" />
-          <p>Tim Air-Walker is a self-taught Club Juggler and Content Creator based out of North Texas. He started
-            juggling clubs in 2015 and almost instantly fell in love with Circular Aesthetics, Flat Throws, & Curvy
-            Patterns within club juggling.</p>
-        </div> 
+        <!-- <div class="performer">
+          <img src="assets/images/festival/performers/zak-1.jpeg" alt="Performer 1" />
+          <h2>Zak McAllister</h2> -->
+
+          <!-- The Mobile Toggle Button -->
+          <!-- <label for="menu-btn2" class="mobile-only-label">Click for Text ▾</label>
+          <input type="checkbox" id="menu-btn2" class="menu-btn2" /> -->
+
+          <!-- The Text Content -->
+          <!-- <div class="toggle-content2">
+            <p> Zak McAllister is a Circadium Graduate and 2 time gold medalist in the IJA Stage Championships.  He will likely do something esoteric in Saturday evening show, and it will likely involve juggling.</p>
+          </div>
+        </div> -->
       </div>
     </div>
 
