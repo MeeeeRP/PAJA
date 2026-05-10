@@ -1,0 +1,9 @@
+---
+deployment:
+    tasks:
+        - export DEPLOYPATH=/home/philyfse/public_html/
+        - /bin/cp index.html $DEPLOYPATH
+        - /bin/cp calendar.html $DEPLOYPATH
+        - /bin/cp festival.html $DEPLOYPATH
+        - /bin/cp team.html $DEPLOYPATH
+        - /bin/cp -R assets $DEPLOYPATH
