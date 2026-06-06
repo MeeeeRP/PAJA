@@ -144,10 +144,17 @@
     height: auto;
     margin: 0;
     margin-bottom: 0.5rem;
-    padding: 3rem;
+    padding: 2rem;
     padding-bottom: 1rem;
     object-fit: cover;
-    /* aspect-ratio: 4/5; Proper sizing for gallery */
+    aspect-ratio: 4/5;
+}
+#tall-pic img {
+    object-fit: contain;
+}
+
+#emcee img,
+#featured img {
     aspect-ratio: 6/4;
 }
 
@@ -233,6 +240,13 @@
     font-size: 2.9em;
 }
 
+.event p,
+.activity p,
+.workshop p {
+    overflow-wrap: break-word;
+    font-size: 1.25em;
+}
+
 @media screen and (max-width: 1500px) {
     .day h2 {
         font-size: 2.9vw;
@@ -251,6 +265,12 @@
 
 .event {
     /* background-color: #B1975F; */
+    background-color: #b1975f;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.activity {
+    /* background-color: ; */
     background-color: #ddbd78;
     padding: 1rem;
     border-radius: 10px;
@@ -304,4 +324,18 @@
 }
 .desktop-tickets {
     display: block;
+}
+
+@media screen and (min-width: 1000px) {
+    .performer p {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .event p,
+    .activity p,
+    .workshop p {
+        font-size: 1.1em;
+    }
 }

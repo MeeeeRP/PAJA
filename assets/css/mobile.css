@@ -3,7 +3,9 @@
 .menu-btn2,
 .menu-btn3,
 .menu-btn4,
-.menu-btn5 {
+.menu-btn5,
+.menu-btn6,
+.menu-btn7 {
     display: none; /* Hide the actual checkbox */
 }
 
@@ -19,19 +21,50 @@
 @media screen and (max-width: 768px) {
     .mobile-only-label {
         display: block; /* Show dropdown trigger on mobile */
-        padding: 10px;
-        background-color: #eee;
+        background-color: transparent;
         cursor: pointer;
+        font-size: 1.3rem;
+    }
+
+    .mobile-only-label[class*="text-hidden"] {
+        display: block;
+    }
+
+    .mobile-only-label[class*="text-shown"] {
+        display: none;
+    }
+
+    .performer:has(.menu-btn1:checked) .mobile-only-label[class*="text-hidden"],
+    .performer:has(.menu-btn2:checked) .mobile-only-label[class*="text-hidden"],
+    .performer:has(.menu-btn3:checked) .mobile-only-label[class*="text-hidden"],
+    .performer:has(.menu-btn4:checked) .mobile-only-label[class*="text-hidden"],
+    .performer:has(.menu-btn5:checked) .mobile-only-label[class*="text-hidden"],
+    .performer:has(.menu-btn6:checked) .mobile-only-label[class*="text-hidden"],
+    .performer:has(.menu-btn7:checked)
+        .mobile-only-label[class*="text-hidden"] {
+        display: none;
+    }
+
+    .performer:has(.menu-btn1:checked) .mobile-only-label[class*="text-shown"],
+    .performer:has(.menu-btn2:checked) .mobile-only-label[class*="text-shown"],
+    .performer:has(.menu-btn3:checked) .mobile-only-label[class*="text-shown"],
+    .performer:has(.menu-btn4:checked) .mobile-only-label[class*="text-shown"],
+    .performer:has(.menu-btn5:checked) .mobile-only-label[class*="text-shown"],
+    .performer:has(.menu-btn6:checked) .mobile-only-label[class*="text-shown"],
+    .performer:has(.menu-btn7:checked) .mobile-only-label[class*="text-shown"] {
+        display: block;
     }
 
     .toggle-content1,
     .toggle-content2,
     .toggle-content3,
     .toggle-content4,
-    .toggle-content5 {
+    .toggle-content5,
+    .toggle-content6,
+    .toggle-content7 {
         display: none; /* Hide text by default on mobile */
-        padding: 10px;
-        border: 1px solid #eee;
+        padding: 1rem;
+        width: 100%;
     }
 
     /* checkbox hack: Show content when input is checked */
@@ -50,10 +83,16 @@
     .menu-btn5:checked ~ .toggle-content5 {
         display: block; /* Show on click */
     }
+    .menu-btn6:checked ~ .toggle-content6 {
+        display: block; /* Show on click */
+    }
+    .menu-btn7:checked ~ .toggle-content7 {
+        display: block; /* Show on click */
+    }
 
     .performer,
     .member {
-        width: 60%;
+        width: 80%;
     }
     .day {
         max-width: 100%;
@@ -85,6 +124,9 @@
     }
     h3 {
         font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.1rem;
     }
     #restaurants {
         flex-direction: column;
@@ -160,5 +202,28 @@
         align-items: center;
         padding: 0;
         gap: 2rem;
+    }
+    #mission {
+        width: 75%;
+    }
+    #mission title {
+        font-size: 2.3rem;
+    }
+    #mission p {
+        font-size: 1.2rem;
+    }
+    #vision {
+        width: 75%;
+    }
+    #vision title {
+        font-size: 2.3rem;
+    }
+    #vision p {
+        font-size: 1.2rem;
+    }
+    .workshop p,
+    .event p,
+    .activity p {
+        font-size: 1.25rem;
     }
 }
