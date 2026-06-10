@@ -5,7 +5,8 @@
 .menu-btn4,
 .menu-btn5,
 .menu-btn6,
-.menu-btn7 {
+.menu-btn7,
+.menu-btn8 {
     display: none; /* Hide the actual checkbox */
 }
 
@@ -40,7 +41,8 @@
     .performer:has(.menu-btn4:checked) .mobile-only-label[class*="text-hidden"],
     .performer:has(.menu-btn5:checked) .mobile-only-label[class*="text-hidden"],
     .performer:has(.menu-btn6:checked) .mobile-only-label[class*="text-hidden"],
-    .performer:has(.menu-btn7:checked)
+    .performer:has(.menu-btn7:checked) .mobile-only-label[class*="text-hidden"],
+    .performer:has(.menu-btn8:checked)
         .mobile-only-label[class*="text-hidden"] {
         display: none;
     }
@@ -51,7 +53,8 @@
     .performer:has(.menu-btn4:checked) .mobile-only-label[class*="text-shown"],
     .performer:has(.menu-btn5:checked) .mobile-only-label[class*="text-shown"],
     .performer:has(.menu-btn6:checked) .mobile-only-label[class*="text-shown"],
-    .performer:has(.menu-btn7:checked) .mobile-only-label[class*="text-shown"] {
+    .performer:has(.menu-btn7:checked) .mobile-only-label[class*="text-shown"],
+    .performer:has(.menu-btn8:checked) .mobile-only-label[class*="text-shown"] {
         display: block;
     }
 
@@ -61,7 +64,8 @@
     .toggle-content4,
     .toggle-content5,
     .toggle-content6,
-    .toggle-content7 {
+    .toggle-content7,
+    .toggle-content8 {
         display: none; /* Hide text by default on mobile */
         padding: 1rem;
         width: 100%;
@@ -87,6 +91,9 @@
         display: block; /* Show on click */
     }
     .menu-btn7:checked ~ .toggle-content7 {
+        display: block; /* Show on click */
+    }
+    .menu-btn8:checked ~ .toggle-content8 {
         display: block; /* Show on click */
     }
 
